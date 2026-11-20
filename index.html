@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Petroleum machinery, equipment and manufacturing support from Shaanxi Zhongfu Petroleum Machinery Equipment Co., Ltd.">
+<title>Zhongfu Petroleum Machinery | Company & Equipment Catalogue</title>
+<link rel="icon" href="favicon.png">
+<style>
+:root{color-scheme:light;--navy:#0e2342;--dark:#091a30;--orange:#a94419;--paper:#f1f4f7;--muted:#4e6073;--line:#d9e1ea}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 "Segoe UI",Arial,sans-serif;color:var(--navy);background:white}
+a{color:inherit}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid #c25621;outline-offset:4px}
+.wrap{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:86px;padding-block:12px;flex-wrap:wrap}
+.logo{width:min(250px,100%);display:block}
+.nav{display:flex;align-items:center;flex-wrap:wrap;gap:12px 26px}
+.nav a{text-decoration:none;font-weight:650}
+.nav a:hover{text-decoration:underline}
+.hero{background:var(--dark);color:white}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:40px;padding-block:68px}
+.hero img{display:block;width:100%;aspect-ratio:1.55;object-fit:cover;border-bottom:5px solid #c26432}
+h1,h2,h3,p{margin:0 0 14px}
+h1,h2,h3{line-height:1.1}
+h1{font-size:clamp(2.65rem,6vw,5.1rem);letter-spacing:-.065em}
+h2{font-size:clamp(2rem,4vw,3.45rem);letter-spacing:-.048em}
+h3{font-size:1.25rem}
+.eyebrow{font-size:.875rem;font-weight:750;text-transform:uppercase;letter-spacing:.12em;color:var(--orange)}
+.hero .eyebrow,.contact .eyebrow{color:#ffb289}
+.hero p:not(.eyebrow){max-width:33ch;color:#e2e9f3;font-size:1.1rem}
+.action{display:inline-block;background:#a94419;color:white;text-decoration:none;border:1px solid transparent;padding:.68rem 1rem;font-weight:700}
+.action:hover{background:#873310}
+.facts{border-bottom:1px solid var(--line)}
+.facts dl{display:grid;grid-template-columns:repeat(3,1fr);margin-block:0;padding-block:26px;gap:16px}
+dt{font-size:.875rem;color:var(--muted)}
+dd{margin:0;font-size:clamp(1.05rem,2.4vw,1.65rem);font-weight:720;overflow-wrap:anywhere}
+section{scroll-margin-top:20px}
+.section{padding-block:clamp(52px,8vw,88px)}
+.intro{max-width:650px;margin-bottom:28px}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.soft{background:var(--paper)}
+.copy{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.tile{border:1px solid var(--line);background:white;min-width:0}
+.tile img{width:100%;aspect-ratio:1.8;object-fit:cover;display:block;background:#e8edf2}
+.tile .tile-body{padding:18px}
+.tile p{margin:0;color:var(--muted)}
+.catalogue .tile img{object-fit:contain}
+.catalogue .tile-body{display:grid;align-content:start;gap:12px}
+.catalogue .tile h3{margin:0}
+.catalogue .tile button{justify-self:start}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip,.subtle{border:1px solid #aebccd;background:white;color:var(--navy);padding:.45rem .78rem;font-weight:650}
+.chip[aria-pressed=true],.subtle:hover{background:var(--navy);border-color:var(--navy);color:white}
+.field-diagram,.inspection-pair{display:grid;aspect-ratio:1.8;grid-template-columns:repeat(2,minmax(0,1fr));overflow:hidden}
+.field-diagram{gap:8px;padding:12px;background:var(--navy);align-content:center}
+.field-diagram span{display:grid;place-items:center;min-height:38px;background:#1e3958;color:white;border-left:3px solid #e78650;font-size:.9rem}
+.inspection-pair img{height:100%;aspect-ratio:auto;object-fit:cover;min-height:0}
+.inspection-pair img:last-child{object-fit:contain;background:white}
+.delivery-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.delivery-steps li{background:white;padding:12px}
+.group-scope{margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+.meta{color:var(--orange);font-size:.875rem;font-weight:700}
+.process{padding:0;list-style:none;display:grid;gap:14px}
+.process li{border-left:3px solid #b04f23;padding-left:14px}
+.process strong{display:block}
+.contact{background:var(--dark);color:white}
+.contact a:not(.action){color:#fdd1b9;overflow-wrap:anywhere}
+.contact p{color:#e2e9f3}
+.form{display:grid;gap:13px}
+.form label{display:grid;gap:4px;font-weight:650}
+input,textarea{min-width:0;width:100%;padding:.55rem .65rem;border:1px solid #abbad0;background:white;color:var(--navy)}
+textarea{resize:vertical}
+.form button{justify-self:start}
+#enquiry-list{padding-left:20px}
+#enquiry-list li{margin-bottom:8px}
+#enquiry-list button{margin-left:8px}
+#enquiry-status:empty{display:none}
+footer{border-top:1px solid #314257;background:var(--dark);color:#dde6f2;padding-block:24px}
+@media(max-width:800px){.hero .wrap,.split{grid-template-columns:1fr}.hero .wrap{padding-block:40px;gap:28px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.wrap{width:calc(100% - 32px)}.grid{grid-template-columns:1fr}.facts dl{grid-template-columns:1fr;gap:10px}.nav{gap:10px 15px}}
+</style>
+</head>
+<body>
+<header class="header" id="top"><div class="wrap">
+<a href="#top"><img class="logo" src="a-logo.webp" alt="Shaanxi Zhongfu Petroleum Machinery Equipment Co., Ltd." width="513" height="171" style="height:auto"></a>
+<nav class="nav" aria-label="Main navigation"><a href="#about">Company</a><a href="#applications">Applications</a><a href="#catalogue">Catalogue</a><a href="#delivery">Project delivery</a><a href="#contact">Enquiry <span id="nav-count">(0)</span></a></nav>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div><p class="eyebrow">Baoji, Shaanxi · Established 2019</p><h1>Petroleum machinery and oilfield support</h1><p>Shaanxi Zhongfu Petroleum Machinery Equipment Co., Ltd.</p><a class="action" href="#catalogue">Explore the catalogue</a></div>
+<img src="a-hero.webp" alt="Industrial building pictured in the Zhongfu company profile" width="904" height="464">
+</div></section>
+<div class="facts"><dl class="wrap">
+<div><dt>Incorporated</dt><dd>5 September 2019</dd></div>
+<div><dt>Registered capital</dt><dd>RMB 18 million</dd></div>
+<div><dt>Unified Social Credit Code</dt><dd>91610322MA6XGHCC68</dd></div>
+</dl></div>
+<section class="section wrap split" id="about">
+<div><p class="eyebrow">Registered company</p><h2>Equipment and manufacturing support</h2></div>
+<div><h3 lang="zh-Hans">陕西中孚石油机械设备有限公司</h3><p class="copy">Based in Baoji, the company is registered for petroleum machinery processing and manufacturing, installation, coating, packaging and transportation. Its registered scope also includes related supplies such as mechanical standard parts, rubber products steel, timber and labour protection supplies.</p><p class="copy">For equipment supply, the starting point is the application and the interfaces it must fit. Drawings, material grades, inspection requirements and the delivery scope are agreed for each project.</p></div>
+</section>
+<section class="section soft" id="applications"><div class="wrap">
+<div class="intro"><p class="eyebrow">Group reference portfolio</p><h2>Oilfield applications</h2><p class="copy">The broader Zhongfu business reference includes the technical areas below. Project scope, equipment and operating responsibilities depend on the application.</p></div>
+<div class="grid">
+<article class="tile"><img src="a-co2.webp" alt="" loading="lazy"><div class="tile-body"><h3>CO₂ stimulation</h3><p>CO₂ injection and alternating CO₂ and water injection are group reference approaches for production enhancement. Reservoir conditions guide equipment, injection and monitoring requirements.</p></div></article>
+<article class="tile"><img src="a-recovery.webp" alt="" loading="lazy"><div class="tile-body"><h3>Enhanced oil recovery</h3><p>The reference portfolio covers chemical, gas-based and thermal recovery approaches. Technique selection depends on a reservoir-specific assessment.</p></div></article>
+<article class="tile"><img src="a-fracturing.webp" alt="" loading="lazy"><div class="tile-body"><h3>Fracturing</h3><p>Stimulation concepts for low-permeability formations include fracture-face treatment and acid-based approaches. Materials and operating limits depend on the project design.</p></div></article>
+<article class="tile"><img src="a-acidising.webp" alt="Offshore oilfield infrastructure" loading="lazy"><div class="tile-body"><h3>Acidising and injectivity</h3><p>Near-wellbore treatments address blockage and formation damage. Reference approaches include retarded acid, composite treatments and diversion.</p></div></article>
+<article class="tile"><img src="a-water.webp" alt="Pumpjacks at an oilfield" loading="lazy"><div class="tile-body"><h3>Water shutoff and profile control</h3><p>Treatments aim to manage unwanted water production and improve injection distribution. Selection depends on the well and formation compatibility.</p></div></article>
+<article class="tile"><img src="a-scale.webp" alt="Oilfield pumping equipment at sunset" loading="lazy"><div class="tile-body"><h3>Scale removal and prevention</h3><p>Chemical and ultrasonic concepts address deposits in wells, pipework and surface equipment. Water chemistry, materials and site conditions guide treatment selection.</p></div></article>
+</div></div></section>
+<section class="section wrap" id="digital">
+<div class="intro"><p class="eyebrow">Group reference portfolio</p><h2>Digital oilfield operations and inspection</h2><p class="copy">Hardware, integration, data access and operating responsibilities are set for each project.</p></div>
+<div class="grid">
+<article class="tile"><div class="field-diagram" role="img" aria-label="Injection records connect materials, transport, receipt and operation"><span>Materials</span><span>Transport</span><span>Receipt</span><span>Injection</span></div><div class="tile-body"><h3>Injection operations</h3><p>Link materials, stock, transport, receipt and injection records to support traceability and field supervision.</p></div></article>
+<article class="tile"><img src="a-digital.webp" alt="Oilfield pumpjack" loading="lazy"><div class="tile-body"><h3>Remote field collaboration</h3><p>Wearable terminals, cameras and remote collaboration tools let field and office teams share operational information.</p></div></article>
+<article class="tile"><div class="inspection-pair"><img src="a-robot.webp" alt="Aerial inspection drone" loading="lazy"><img src="a-drone.webp" alt="Ground inspection robot" loading="lazy"></div><div class="tile-body"><h3>Drone and robotic inspection</h3><p>Aerial surveys can support pipeline inspections. Ground robots with cameras and sensors can support routine patrols and remote observation in hazardous areas.</p></div></article>
+</div>
+<div class="group-scope split">
+<div><p class="eyebrow">Zhongfu Technology</p><h3>Industrial digital services</h3><p class="copy">The reference site is operated under the name Shaanxi Zhongfu Petroleum Information Technology Co., Ltd. Its digital business covers smart oil and gas, industrial security, petrochemical operations, oilfield services, storage and transport, and the industrial internet.</p><a href="http://www.zfpetro.com/#/indexMain">Zhongfu Technology reference site</a></div>
+<div><h3>Technology focus</h3><p class="copy">Zhongfu Technology describes its work in oil and gas engineering services, cloud and edge computing, and AI for industrial internet applications.</p><h3>Industry events</h3><p class="copy">In 2023, Zhongfu Technology reported exhibiting at the Shanghai International Petroleum and Petrochemical Technology and Equipment Exhibition and presenting on digital energy solutions at a smart oilfield technical exchange.</p></div>
+</div>
+</section>
+<section class="section catalogue wrap" id="catalogue">
+<div class="intro"><p class="eyebrow">Equipment</p><h2>Product catalogue</h2><p class="copy">Filter by application and add equipment to your enquiry.</p></div>
+<div class="filters" id="filters" aria-label="Filter products"></div>
+<div class="grid" id="products"></div>
+</section>
+<section class="section soft" id="delivery"><div class="wrap split">
+<div><p class="eyebrow">Quality</p><h2>Inspection and acceptance</h2><p class="copy">Confirm drawings, material grades, equipment interfaces, inspection requirements and acceptance criteria before ordering. Inspection points and delivery responsibilities are agreed for each project.</p></div>
+<div><p class="eyebrow">Production</p><h2>From scope to handover</h2><ol class="process delivery-steps">
+<li><strong>Define the scope</strong>Review the application and supply boundaries.</li>
+<li><strong>Confirm the design</strong>Agree materials, interfaces and acceptance criteria.</li>
+<li><strong>Plan and coordinate</strong>Set responsibilities, inspection points and the delivery schedule.</li><li><strong>Deliver and hand over</strong>Agree packaging, documentation and commissioning boundaries.</li>
+</ol></div>
+</div></section>
+<section class="section contact" id="contact"><div class="wrap split">
+<div><p class="eyebrow">Contact</p><h2>Prepare an enquiry</h2><p>Include your intended application and delivery requirements. For equipment requests, add the relevant drawings, material grades and connection interfaces where available.</p><h3>Registered company address</h3><p>Lugang High-end Equipment Manufacturing Industrial Park, Fengsong Road, Chengguan Town, Fengxiang County, Baoji, Shaanxi, China</p><h3>Group business enquiries</h3><p><a href="mailto:info@zhongfupetrol.com">info@zhongfupetrol.com</a><br><a href="tel:+862986214434">+86 29 8621 4434</a></p><p>Group office: Room 1104, Unit 1, Building 1, Jingfa Building, Fengcheng Second Road, Xi’an Economic and Technological Development Zone, Shaanxi, China.</p></div>
+<div><h3>Selected equipment</h3><p id="empty">No equipment selected.</p><ul id="enquiry-list"></ul><p id="enquiry-status" role="status"></p>
+<form id="enquiry" class="form">
+<label>Your name<input name="name" autocomplete="name" required></label>
+<label>Company<input name="company" autocomplete="organization"></label>
+<label>Project requirements<textarea name="requirements" rows="4" required></textarea></label>
+<button class="action" type="submit">Open email draft</button>
+</form></div>
+</div></section>
+</main>
+<footer><div class="wrap">Shaanxi Zhongfu Petroleum Machinery Equipment Co., Ltd.</div></footer>
+<script>
+const products = [
+  {name:"Manifolds, fluid ends and flowline fittings", category:"Flowline", image:"flowline", description:"Manifolds distribute and isolate surface flows. Fluid ends provide the pumping chamber and valve interfaces. Swivel joints help route pipework, and hammer unions connect compatible fittings."},
+  {name:"Valves and connection components", category:"Flowline", image:"valves", description:"Plug valves isolate flow, while check valves limit backflow. Pup joints provide straight runs. Flanges and adapters connect compatible equipment and pipework interfaces."},
+  {name:"Integrated process skids", category:"Packaged units", image:"pump", description:"Packaged pipework, valves and supporting equipment on a common frame. Confirm layout, instrumentation and inspection requirements for the project."},
+  {name:"Industrial pump units", category:"Packaged units", image:"skid", description:"Base-mounted pump and drive assemblies for industrial fluid transfer. Selection depends on liquid properties, flow, head, materials and site interfaces."},
+  {name:"Cementing pump units", category:"Drilling", image:"mud", description:"Skid-mounted pumping packages for controlled placement of cement slurry during well construction."},
+  {name:"Triplex mud pumps", category:"Drilling", image:"cementing", description:"Reciprocating pumps that circulate drilling fluid through the well system during drilling."},
+  {name:"Wellhead and tree assemblies", category:"Production", image:"separator", description:"Surface valve and connection assemblies for routing and isolating flow at the wellhead."},
+  {name:"Well test separators", category:"Production", image:"wellhead", description:"Surface packages that separate produced fluids into gas and liquid phases for well testing and measurement."}
+];
+const selected = new Set();
+const filters = document.getElementById("filters");
+const grid = document.getElementById("products");
+const list = document.getElementById("enquiry-list");
+const statusMessage = document.getElementById("enquiry-status");
+let category = "All";
+const categories = ["All", ...new Set(products.map(product => product.category))];
+
+function updateEnquiry(message) {
+  list.replaceChildren();
+  for (const name of selected) {
+    const item = document.createElement("li");
+    const remove = document.createElement("button");
+    remove.type = "button";
+    remove.className = "subtle";
+    remove.textContent = "Remove";
+    remove.setAttribute("aria-label", "Remove " + name);
+    remove.addEventListener("click", () => {
+      selected.delete(name);
+      updateEnquiry(name + " removed.");
+      document.querySelector("#enquiry input").focus();
+    });
+    item.append(name, remove);
+    list.append(item);
+  }
+  document.getElementById("empty").hidden = selected.size > 0;
+  document.getElementById("nav-count").textContent = "(" + selected.size + ")";
+  for (const button of grid.querySelectorAll("button")) {
+    const added = selected.has(button.dataset.product);
+    button.setAttribute("aria-pressed", String(added));
+    button.textContent = added ? "Added to enquiry" : "Add to enquiry";
+  }
+  if (message) statusMessage.textContent = message;
+}
+
+function renderCatalogue() {
+  for (const button of filters.querySelectorAll("button")) {
+    button.setAttribute("aria-pressed", String(button.textContent === category));
+  }
+  grid.replaceChildren();
+  for (const product of products.filter(item => category === "All" || item.category === category)) {
+    const article = document.createElement("article");
+    article.className = "tile";
+    article.innerHTML = '<img loading="lazy" alt="" src="a-' + product.image + '.webp"><div class="tile-body"><span class="meta">' + product.category + '</span><h3>' + product.name + '</h3><p>' + product.description + '</p><button type="button" class="subtle"></button></div>';
+    const button = article.querySelector("button");
+    button.dataset.product = product.name;
+    button.addEventListener("click", () => {
+      if (selected.has(product.name)) {
+        selected.delete(product.name);
+        updateEnquiry(product.name + " removed.");
+      } else {
+        selected.add(product.name);
+        updateEnquiry(product.name + " added.");
+      }
+    });
+    grid.append(article);
+  }
+  updateEnquiry();
+}
+
+for (const name of categories) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "chip";
+  button.textContent = name;
+  button.addEventListener("click", () => {
+    category = name;
+    renderCatalogue();
+  });
+  filters.append(button);
+}
+renderCatalogue();
+
+document.getElementById("enquiry").addEventListener("submit", event => {
+  event.preventDefault();
+  const values = new FormData(event.currentTarget);
+  const lines = ["Name: " + values.get("name"), "Company: " + values.get("company"), "", "Equipment:"];
+  lines.push(...(selected.size ? [...selected].map(name => "- " + name) : ["General enquiry"]));
+  lines.push("", "Project requirements:", values.get("requirements"));
+  window.location.href = "mailto:info@zhongfupetrol.com?subject=" + encodeURIComponent("Zhongfu equipment enquiry") + "&body=" + encodeURIComponent(lines.join("\r\n"));
+});
+</script>
+</body>
+</html>
+
